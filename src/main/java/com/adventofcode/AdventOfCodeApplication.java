@@ -2,6 +2,7 @@ package com.adventofcode;
 
 import com.adventofcode.config.Utils;
 import com.adventofcode.days.Day01;
+import com.adventofcode.days.Day02;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,6 +15,7 @@ public class AdventOfCodeApplication {
     public static void main(String[] args) throws IOException {
         SpringApplication.run(AdventOfCodeApplication.class, args);
         Day01.main(args);
+        Day02.main(args);
     }
 
 }
