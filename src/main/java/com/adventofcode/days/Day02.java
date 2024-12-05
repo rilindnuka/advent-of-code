@@ -82,12 +82,15 @@ public class Day02 {
             previousNumber = currentInteger;
         }
         if (!safe) {
-            ArrayList<Integer> oldIntegers = new ArrayList<>(integers);
-            integers.remove(currentIndex);
-            safe = isSafePartOne(integers);
-            if (!safe){
-                oldIntegers.remove(currentIndex-1);
-                safe=isSafePartOne(oldIntegers);
+
+            for (int i = 0; i < integers.size(); i++) {
+                ArrayList<Integer> oldIntegers = new ArrayList<>(integers);
+                oldIntegers.remove(i);
+                if (isSafePartOne(oldIntegers)){
+                    return true;
+                }
+
+
             }
         }
         return safe;
