@@ -13,9 +13,9 @@ public class Day02 {
 
     public static void main(String[] args) throws IOException {
         logger.info("This is the puzzle from day 2");
-        String input = readInput("day02.txt");
-//        logger.info("Part 1: \n{}", part1(input));
-        logger.info("Part 2: \n{}", part2(input));
+        String input = readInput("day02/input.txt");
+        logger.info("\nPart 1: \n{}", part1(input));
+        logger.info("\nPart 2: \n{}", part2(input));
     }
 
     public static List<List<Integer>> createLists(String input) {

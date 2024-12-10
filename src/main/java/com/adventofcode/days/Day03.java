@@ -16,9 +16,9 @@ public class Day03 {
 
     public static void main(String[] args) throws IOException {
         logger.info("This is the puzzle from day 3");
-        String input = readInput("day03.txt");
-        logger.info("Part 1: \n{}", part1(input));
-        logger.info("Part 2: \n{}", part2(input.replace("\n","")));
+        String input = readInput("day03/input.txt");
+        logger.info("\nPart 1: \n{}", part1(input));
+        logger.info("\nPart 2: \n{}", part2(input.replace("\n","")));
     }
 
     public static long part1(String input) {

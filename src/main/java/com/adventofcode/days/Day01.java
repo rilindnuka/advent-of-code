@@ -16,9 +16,9 @@ public class Day01 {
 
     public static void main(String[] args) throws IOException {
         logger.info("This is the puzzle from day 1");
-        String input = readInput("day01.txt");
-        logger.info("Part 1: \n{}", part1(input));
-        logger.info("Part 2: \n{}", part2(input));
+        String input = readInput("day01/input.txt");
+        logger.info("\nPart 1: \n{}", part1(input));
+        logger.info("\nPart 2: \n{}", part2(input));
     }
 
     public static Map<String, List<Long>> getLists(String input){
