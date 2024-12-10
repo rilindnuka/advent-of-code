@@ -48,7 +48,6 @@ public class Day03 {
         String doContinue="do()";
         String dontContinue="don't()";
         StringBuilder builder = new StringBuilder();
-        logger.info("{}",input.charAt(62));
         for (int i = 0; i < input.length(); i++) {
             //Searching for do()
             if (i >=4){
